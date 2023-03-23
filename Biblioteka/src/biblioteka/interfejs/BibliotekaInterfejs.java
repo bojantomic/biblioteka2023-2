@@ -38,6 +38,7 @@ public interface BibliotekaInterfejs {
 	 * Vraca sve knjige iz biblioteke
 	 * 	
 	 * @return Lista sa svim knjigama
+	 * @see biblioteka.Knjiga
 	 */
 	public List<Knjiga> vratiSveKnjige();
 	
