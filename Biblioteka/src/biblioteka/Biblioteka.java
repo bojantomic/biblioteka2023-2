@@ -5,12 +5,20 @@ import java.util.List;
 
 import biblioteka.interfejs.BibliotekaInterfejs;
 
+/**
+ * Implementacija interfejsa BibliotekaInterfejs u kojoj
+ * se koristi ArrayList lista za smestanje knjiga.
+ * 
+ * @author Bojan Tomic
+ * @since 0.9.0
+ */
 public class Biblioteka implements BibliotekaInterfejs {
 	
+	/**
+	 * ArrayList lista sa svim knjigama iz biblioteke.
+	 */
 	private List<Knjiga> knjige = new ArrayList<Knjiga>();
-
 	
-	//Ovo je metoda za dodavanje knjige u biblioteku
 	@Override
 	public void dodajKnjigu(Knjiga knjiga) {
 		if (knjiga == null)
